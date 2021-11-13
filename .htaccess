@@ -1,4 +1,4 @@
-RewriteEngine on
-
-RewriteCond %{REQUEST_URI} !^/subfolder
-RewriteRule ^(.*)$ /dist/$1 [NC,L]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^dist/(.*)$ /$1 [R=301,NC,L]
+</IfModule>

@@ -4,8 +4,8 @@
   "description": "My Profile",
   "main": "index.js",
   "scripts": {
-    "build:css" : "tailwindcss -i ./src/style.css -o ./dist/tailwind.css",
-    "build:config" : "tailwindcss -i ./src/style.css -c ./tailwind.config.js -o ./dist/tailwind.css",
+    "build:css": "tailwindcss -i ./src/style.css -o ./dist/tailwind.css",
+    "build:config": "tailwindcss -i ./src/style.css -c ./tailwind.config.js -o ./dist/tailwind.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AriSmrd",
@@ -14,5 +14,8 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "nightwind": "^1.1.12"
   }
 }

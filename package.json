@@ -4,8 +4,8 @@
   "description": "My Profile",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/style.css -o ./dist/tailwind.css",
-    "build:config": "tailwindcss -i ./src/style.css -c ./tailwind.config.js -o ./dist/tailwind.css",
+    "build:css": "tailwindcss -i ./src/style.css -o ./public/tailwind.css",
+    "build:config": "tailwindcss -i ./src/style.css -c ./tailwind.config.js -o ./public/tailwind.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AriSmrd",

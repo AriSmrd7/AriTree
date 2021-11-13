@@ -1,4 +1,11 @@
-RewriteEngine on
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
 
-RewriteCond %{REQUEST_URI} !^public
-RewriteRule ^(.*)$ public/$1 [L]
+    RewriteEngine On
+
+    # Redirect All Requests To The Subfolder
+    RewriteRule ^ /public
+
+</IfModule>

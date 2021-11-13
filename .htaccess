@@ -1,4 +1,6 @@
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^dist/(.*)$ /$1 [R=301,NC,L]
-</IfModule>
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} /dist/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+RewriteRule ^(.*)$ dist/index.html?$1 [L,QSA]

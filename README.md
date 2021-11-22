@@ -1,3 +1,3 @@
 # Linktree Clone
 
-## Using Tailwind CSS for awesome style
+## Using HTML5 and Tailwind CSS for awesome style
